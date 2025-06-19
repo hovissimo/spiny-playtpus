@@ -1,0 +1,9 @@
+name: spiny-platypus
+
+services:
+  node-red:
+    image: nodered/node-red:latest
+    volumes:
+      - ./node_red_data:/data:rw
+    ports:
+      - 1880:1880
