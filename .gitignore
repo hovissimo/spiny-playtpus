@@ -137,3 +137,7 @@ dist
 
 # Personal GPG keys
 gnupg/
+
+# ctags
+tags
+tags.lock
