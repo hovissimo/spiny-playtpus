@@ -144,3 +144,6 @@ tags.lock
 
 # secret files to NOT commit
 secrets/
+
+# Not Node-RED backup files
+*.json.backup
