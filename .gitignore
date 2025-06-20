@@ -141,3 +141,6 @@ gnupg/
 # ctags
 tags
 tags.lock
+
+# secret files to NOT commit
+secrets/

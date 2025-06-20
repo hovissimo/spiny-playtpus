@@ -1,3 +1,17 @@
+// We're going to read the credential secret from a "file" provided by Docker Compose
+const fs = require('fs');
+
+function getCredentialSecret() {
+	try {
+		const data = fs.readFileSync('/run/secrets/node_red_credential_secret', 'utf8').trim();
+		console.log("Using credential secret from file:", data);
+		return data;
+	} catch (error) {
+		console.error("Error reading credential secret file:", error);
+		throw error;
+	}
+}
+
 /**
  * This is the default settings file provided by Node-RED.
  *
