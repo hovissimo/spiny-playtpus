@@ -9,6 +9,19 @@ services:
       - 1880:1880
     secrets:
       - node_red_credential_secret
+  mosquitto:
+    image: eclipse-mosquitto:latest
+    volumes:
+      - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
+      - mosquitto_data:/mosquitto/data
+      - mosquitto_log:/mosquitto/log
+    ports:
+      - 1883:1883
+      - 9001:9001
 secrets:
   node_red_credential_secret:
     file: ./secrets/node_red_credential_secret
+
+volumes:
+  mosquitto_data:
+  mosquitto_log:
