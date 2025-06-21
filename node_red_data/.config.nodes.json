@@ -772,5 +772,24 @@
                 "file": "/data/node_modules/@flowfuse/node-red-dashboard/nodes/widgets/ui_control.js"
             }
         }
+    },
+    "node-red-contrib-suncron": {
+        "name": "node-red-contrib-suncron",
+        "version": "1.6.4",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "suncron": {
+                "name": "suncron",
+                "types": [
+                    "suncron"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-suncron",
+                "file": "/data/node_modules/node-red-contrib-suncron/suncron.js"
+            }
+        }
     }
 }
