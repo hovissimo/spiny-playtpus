@@ -426,5 +426,57 @@
                 "file": "/usr/src/node-red/node_modules/@node-red/nodes/core/storage/23-watch.js"
             }
         }
+    },
+    "node-red-contrib-zwave-js": {
+        "name": "node-red-contrib-zwave-js",
+        "version": "9.1.3",
+        "local": true,
+        "user": true,
+        "nodes": {
+            "zwave-js": {
+                "name": "zwave-js",
+                "types": [
+                    "zwave-js"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-zwave-js",
+                "file": "/data/node_modules/node-red-contrib-zwave-js/zwave-js/zwave-js.js"
+            },
+            "zwave-device": {
+                "name": "zwave-device",
+                "types": [
+                    "zwave-device"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-zwave-js",
+                "file": "/data/node_modules/node-red-contrib-zwave-js/zwave-js/zwave-device.js"
+            },
+            "event-filter": {
+                "name": "event-filter",
+                "types": [
+                    "event-filter"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-zwave-js",
+                "file": "/data/node_modules/node-red-contrib-zwave-js/zwave-js/event-filter.js"
+            },
+            "cmd-factory": {
+                "name": "cmd-factory",
+                "types": [
+                    "cmd-factory"
+                ],
+                "enabled": true,
+                "local": true,
+                "user": false,
+                "module": "node-red-contrib-zwave-js",
+                "file": "/data/node_modules/node-red-contrib-zwave-js/zwave-js/cmd-factory.js"
+            }
+        }
     }
 }
